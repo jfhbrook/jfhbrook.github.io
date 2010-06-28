@@ -3,8 +3,6 @@ layout: post
 title: BzzzZZzzZzbbbz
 ---
 
-##8:30am MDT
-
 I'm currently in the Salt Lake City airport, in a pub-ish area (because they have open seats), waiting for my connection. The World Cup is on the TV. This is the first time I've heard the buzz of the vuvuzela in-context.
 
 >_<
