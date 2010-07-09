@@ -21,9 +21,9 @@ My grandmother, being a willfully ignorant senior citizen internet user, jumps a
 
 the so-called virus scanner goes to work quickly. It rootkits itself into the MBR, the networking stack, numerous basic startup programs, and even AVG antivirus (disabling it). Trying to do anything, and I mean *anything* (You seriously can't conceive the extent at which "anything" goes), and popups exclaiming, "YOUR FILES ARE CURCPTED SCAN YOUR FILES WITH SOME JAVASCRIPTS IN THE INTERNET EXPLODER" and actually *opening* Internet Explorer reveals the second or third most amazing web site I have ever seen: "PORNO.COM":
 
-![]()
+![](http://farm5.static.flickr.com/4098/4776109583_e46b83ce44.jpg)
 
-([Flickr](), thanks to Mom's iPhone)
+([flickr](http://www.flickr.com/photos/jesusabdullah/4776109583/)--thanks Mom!)
 
 So, after making a half-assed attempt at saving Dad's music files (it was pretty hopeless), I nuked the crap out of the hard drive and started the long, laborious process of starting from scratch with Windows XP Pro. Man I wish I was installing some kind of linux.
 
