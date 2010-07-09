@@ -43,7 +43,7 @@ Here's what actually happened:
 
 After lots of kludging, finagling and some history I won't bore you with, here's the current situation:
 
-* One cable running from the work office (which luckily had a phone cable) to the upstairs boiler room
+* One cable running from the work office (which luckily had a phone jack) to the upstairs boiler room
 
 * One cable running from the upstairs boiler room to the apartment
 
