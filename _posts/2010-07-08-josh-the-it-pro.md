@@ -1,5 +1,5 @@
 ---
-format: post
+layout: post
 title: Josh the IT Professional
 ---
 
