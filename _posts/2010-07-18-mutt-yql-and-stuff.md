@@ -32,7 +32,7 @@ Still hacking on lulzbot! It's still a piece of crap! But it was a basic weather
 
     select * from weather.woeid where w in (select woeid from geo.places where text="Fairbanks, AK" limit 1)
 
-[Try it here!](http://developer.yahoo.com/yql/console/?q=select%20*%20from%20weather.woeid%20where%20w%20in%20(select%20woeid%20from%20geo.places%20where%20text%3D%40location%20limit%201)&env=store://datatables.org/alltableswithkeys#h=select%20*%20from%20weather.woeid%20where%20w%20in%20%28select%20woeid%20from%20geo.places%20where%20text%3D%22Fairbanks%2C%20AK%22%20limit%201%29)
+[Try it here!](http://yhoo.it/dlRkZs)
 
 Honestly, YQL strikes me as a little weird. But, it works, and I was able to scramble that bit up there together really easily to make a query that easily grabs me exactly what I want with a pretty general query! What's more, I'm using [this nifty library](http://github.com/drgath/node-yql) at the recommendation of someone from #node.js, which makes it REAL easy. I'm really glad I got to avoid trying to probe NOAA's APIs. Thanks, recommender!
 
