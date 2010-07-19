@@ -38,11 +38,11 @@ Honestly, YQL strikes me as a little weird. But, it works, and I was able to scr
 
 Also neat is that I'm using unicode for the output of the bot. So, for example:
 
-> 19:19 < jesusabdroolah> !wx 99775
-> 19:19 < lulzbot> Fairbanks, AK:
-> 19:19 < lulzbot> Now: ☁☁☁(Cloudy), 68 (F)
-> 19:19 < lulzbot> Today: ☔(Showers), 67/55 (F)
-> 19:19 < lulzbot> Tomorrow: ☔(Showers), 65/54 (F)
+    19:19 < jesusabdroolah> !wx 99775
+    19:19 < lulzbot> Fairbanks, AK:
+    19:19 < lulzbot> Now: ☁☁☁(Cloudy), 68 (F)
+    19:19 < lulzbot> Today: ☔(Showers), 67/55 (F)
+    19:19 < lulzbot> Tomorrow: ☔(Showers), 65/54 (F)
 
 (You can see UTF-8, right? If not, the symbols are unicode clouds and umbrellas. The weather here has been pretty nasty lately.)
 
