@@ -46,3 +46,11 @@ Also neat is that I'm using unicode for the output of the bot. So, for example:
 
 (The weird squiggles that are getting eaten somewhere between my markdown and your html are [clouds](http://www.fileformat.info/info/unicode/char/2601/index.htm) and [umbrellas](http://www.fileformat.info/info/unicode/char/2614/index.htm). I also use a [sun](http://www.fileformat.info/info/unicode/char/263c/index.htm) for better weather. Things have been dreary here lately!)
 
+# Mutt
+
+Yesterday, I forgot to write about Mutt!  I don't normally use it, but the other day I learned that, using it, you can fire off emails with a single command! This makes emailing files to myself over SSH way easier. So, now, instead of *ssh -XY* and using firefox/gmail, I can do this:
+
+    echo "File attached." | mutt -s'That stupid file' -a file.m josh.holbrook@gmail.com
+
+And less than two seconds later, *bam* in my inbox! It's pretty awesome that I can do this, imo. :D
+
