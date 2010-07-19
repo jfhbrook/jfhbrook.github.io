@@ -44,5 +44,5 @@ Also neat is that I'm using unicode for the output of the bot. So, for example:
     19:19 < lulzbot> Today: ☔(Showers), 67/55 (F)
     19:19 < lulzbot> Tomorrow: ☔(Showers), 65/54 (F)
 
-(You can see UTF-8, right? If not, the symbols are unicode clouds and umbrellas. The weather here has been pretty nasty lately.)
+(The weird squiggles that are getting eaten somewhere between my markdown and your html are [clouds](http://www.fileformat.info/info/unicode/char/2601/index.htm) and [umbrellas](http://www.fileformat.info/info/unicode/char/2614/index.htm). I also use a [sun](http://www.fileformat.info/info/unicode/char/263c/index.htm) for better weather. Things have been dreary here lately!)
 
