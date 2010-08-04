@@ -76,3 +76,5 @@ It only took me an hour to write this down.
 The tools Node supplies for managing processes makes it really easy to not merely create yet another process supervision framework, but to write your own ad-hoc process supervisor. In other words, Node *supplies the framework*.
 
 SO COOL
+
+Now I just have to get Node running on the ARSC workstations, and wouldn't you know it---fucker fails to build. I guess I'm sticking to my crummy bash script for now!
