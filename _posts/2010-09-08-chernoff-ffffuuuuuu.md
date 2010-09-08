@@ -24,14 +24,14 @@ Some observations:
 
 * First, while "rage" of a rageface can be used to represent a variable pretty plainly, the other emotions are, in my opinion, too subtle to make much use of (I tried!). As such, while real Chernoff faces can represent many variables, you can only really get one out of chernoff FFFFUUUU-ces.
 
-* The ability to use arbitrary images isn't something that's baked into most plotting libraries. I originally looked into doing this with matplotlib, but the way to do so definitely wasn't obvious. (*) Flot, which I ended up using, gives you the tools, but they're more general than, "use this as a marker." g.raphael, of course, still has a long way to go.
+* The ability to use arbitrary images isn't something that's baked into most plotting libraries. I originally looked into doing this with matplotlib, but the way to do so definitely wasn't obvious. (\*) Flot, which I ended up using, gives you the tools, but they're more general than, "use this as a marker." g.raphael, of course, still has a long way to go.
 
 * I don't actually like flot that much. I mean, it works, but some of its api is a bit awkward. Text labels could've been done better, for example. Also, while the plots look okay, they don't really appeal to my own sense of aesthetics. I think g.raphael, once it's done and somewhat well-documented, will be more my speed.
 
 * I expected this plot to be complete and utter [chartjunk](http://en.wikipedia.org/wiki/Chartjunk), and while I wouldn't recommend using this seriously, it's actually surprisingly readable. I mean, you can actually draw conclusions from it. For instance, people disliked Carter and Ford way more than they disliked Bush II, on average. In addition, Clinton received more of a "meh" reaction from people than Carter, despite similar reductions in debt and inflation rates. Clearly, my x and y variables only paint part of the picture, if any.
 
 
-(*) I emailed their listserv about my problem, and this was the one response I got:
+(\*) I emailed their listserv about my problem, and this was the one response I got:
 
 > Images can placed at arbitrary position (using the extent keyword).
 > I think this is enough as far as you're careful with the aspect.
