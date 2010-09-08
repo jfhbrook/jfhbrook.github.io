@@ -3,17 +3,19 @@ layout: post
 title: Chernoff FFFFUUUUUU
 ---
 
-I just recently bought and read through (most of) [Tufte's first book](http://www.edwardtufte.com/tufte/books_vdqi) on graphs, and I read about something called [Chernoff faces](http://en.wikipedia.org/wiki/Chernoff_face). From Wikipedia:
+<p>I just recently bought and read through (most of) <a href='http://www.edwardtufte.com/tufte/books_vdqi'>Tufte&#8217;s first book</a> on graphs, and I read about something called <a href='http://en.wikipedia.org/wiki/Chernoff_face'>Chernoff faces</a>. From Wikipedia:</p> 
+ 
+<blockquote> 
+<p>Chernoff faces display multivariate data in the shape of a human face. The individual parts, such as eyes, ears, mouth and nose represent values of the variables by their shape, size, placement and orientation.</p> 
+</blockquote> 
+ 
+<p>While Wikipedia&#8217;s example shows just faces, in Tufte&#8217;s example (and I believe in other cases as well), these faces are actually used as <em>markers</em> on x-y plots, with the other <em>n-2</em> dimensions represented by the faces. Interesting, right?</p> 
+ 
+<p>Then, I immediately thought of, well, my <a href='http://tinypic.com/view.php?pic=2dcd74j&amp;s=3'>favorite meme</a>.</p> 
+ 
+<p>&#8230;</p> 
 
-> Chernoff faces display multivariate data in the shape of a human face. The individual parts, such as eyes, ears, mouth and nose represent values of the variables by their shape, size, placement and orientation.
-
-While Wikipedia's example shows just faces, in Tufte's example (and I believe in other cases as well), these faces are actually used as *markers* on x-y plots, with the other *n-2* dimensions represented by the faces. Interesting, right?
-
-Then, I immediately thought of, well, my [favorite meme](http://tinypic.com/view.php?pic=2dcd74j&s=3).
-
-...
-
->:D
+<p>&gt;:D</p>
 
 <!--My example plot-->
 
@@ -199,22 +201,30 @@ Then, I immediately thought of, well, my [favorite meme](http://tinypic.com/view
 
 <!--end example-->
 
-Some observations:
-
-* First, while "rage" of a rageface can be used to represent a variable pretty plainly, the other emotions are, in my opinion, too subtle to make much use of (I tried!). As such, while real Chernoff faces can represent many variables, you can only really get one out of chernoff FFFFUUUU-ces.
-
-* The ability to use arbitrary images isn't something that's baked into most plotting libraries. I originally looked into doing this with matplotlib, but the way to do so definitely wasn't obvious. (*) Flot, which I ended up using, gives you the tools, but they're more general than, "use this as a marker." g.raphael, of course, still has a long way to go.
-
-* I don't actually like flot that much. I mean, it works, but some of its api is a bit awkward. Text labels could've been done better, for example. Also, while the plots look okay, they don't really appeal to my own sense of aesthetics. I think g.raphael, once it's done and somewhat well-documented, will be more my speed.
-
-* I expected this plot to be complete and utter [chartjunk](http://en.wikipedia.org/wiki/Chartjunk), and while I wouldn't recommend using this seriously, it's actually surprisingly readable. I mean, you can actually draw conclusions from it. For instance, people disliked Carter and Ford way more than they disliked Bush II, on average. In addition, Clinton received more of a "meh" reaction from people than Carter, despite similar reductions in debt and inflation rates. Clearly, my x and y variables only paint part of the picture, if any.
-
-
-(*) I emailed their listserv about my problem, and this was the one response I got:
-
-> Images can placed at arbitrary position (using the extent keyword).
-> I think this is enough as far as you're careful with the aspect.
-> Looking at the wikipedia example, I don't see any reason that this
-> cannot be done with matplotlib.
-
-Am I the only one that got a big confused by this? :S
+<p>Some observations:</p> 
+ 
+<ul> 
+<li> 
+<p>First, while &#8220;rage&#8221; of a rageface can be used to represent a variable pretty plainly, the other emotions are, in my opinion, too subtle to make much use of (I tried!). As such, while real Chernoff faces can represent many variables, you can only really get one out of chernoff FFFFUUUU-ces.</p> 
+</li> 
+ 
+<li> 
+<p>The ability to use arbitrary images isn&#8217;t something that&#8217;s baked into most plotting libraries. I originally looked into doing this with matplotlib, but the way to do so definitely wasn&#8217;t obvious. (*) Flot, which I ended up using, gives you the tools, but they&#8217;re more general than, &#8220;use this as a marker.&#8221; g.raphael, of course, still has a long way to go.</em></p> 
+</li> 
+ 
+<li> 
+<p>I don&#8217;t actually like flot that much. I mean, it works, but some of its api is a bit awkward. Text labels could&#8217;ve been done better, for example. Also, while the plots look okay, they don&#8217;t really appeal to my own sense of aesthetics. I think g.raphael, once it&#8217;s done and somewhat well-documented, will be more my speed.</p> 
+</li> 
+ 
+<li> 
+<p>I expected this plot to be complete and utter <a href='http://en.wikipedia.org/wiki/Chartjunk'>chartjunk</a>, and while I wouldn&#8217;t recommend using this seriously, it&#8217;s actually surprisingly readable. I mean, you can actually draw conclusions from it. For instance, people disliked Carter and Ford way more than they disliked Bush II, on average. In addition, Clinton received more of a &#8220;meh&#8221; reaction from people than Carter, despite similar reductions in debt and inflation rates. Clearly, my x and y variables only paint part of the picture, if any.</p> 
+</li> 
+</ul> 
+ 
+<p>(*) I emailed their listserv about my problem, and this was the one response I got:</em></p> 
+ 
+<blockquote> 
+<p>Images can placed at arbitrary position (using the extent keyword). I think this is enough as far as you&#8217;re careful with the aspect. Looking at the wikipedia example, I don&#8217;t see any reason that this cannot be done with matplotlib.</p> 
+</blockquote> 
+ 
+<p>Am I the only one that got a big confused by this? :S</p> 
