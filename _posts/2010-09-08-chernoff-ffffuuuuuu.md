@@ -38,4 +38,4 @@ Some observations:
 > Looking at the wikipedia example, I don't see any reason that this
 > cannot be done with matplotlib.
 
-Am I the only one that got a big confused by this? :S
+Am I the only one that got a bit confused by this? :S
