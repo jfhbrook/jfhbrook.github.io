@@ -13,7 +13,7 @@ Then, I immediately thought of, well, my [favorite meme](http://tinypic.com/view
 
 ...
 
->:D
+\>:D
 
 ![](http://farm5.static.flickr.com/4110/4971598443_bf0fbf50b4_b.jpg)
 ([Screencap on Flickr](http://www.flickr.com/photos/jesusabdullah/4971598443/))
