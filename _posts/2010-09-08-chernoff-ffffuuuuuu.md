@@ -1,0 +1,220 @@
+---
+layout: post
+title: Chernoff FFFFUUUUUU
+---
+
+I just recently bought and read through (most of) [Tufte's first book](http://www.edwardtufte.com/tufte/books_vdqi) on graphs, and I read about something called [Chernoff faces](http://en.wikipedia.org/wiki/Chernoff_face). From Wikipedia:
+
+> Chernoff faces display multivariate data in the shape of a human face. The individual parts, such as eyes, ears, mouth and nose represent values of the variables by their shape, size, placement and orientation.
+
+While Wikipedia's example shows just faces, in Tufte's example (and I believe in other cases as well), these faces are actually used as *markers* on x-y plots, with the other *n-2* dimensions represented by the faces. Interesting, right?
+
+Then, I immediately thought of, well, my [favorite meme](http://tinypic.com/view.php?pic=2dcd74j&s=3).
+
+...
+
+>:D
+
+<!--My example plot-->
+
+<script type="text/javascript" src="underscore.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.flot.js"></script>
+    <script type="text/javascript" src="jquery.flot.image.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //Datasets!
+            var presidents = ['Obama', 'Bush II', 'Clinton', 'Bush I', 'Reagan', 'Carter', 'Ford'];
+            var approvals = [53, 49.4, 55.1, 60.9, 52.8, 45.5, 47.2];
+            var debt = [ (99.7-86.1)/3
+                       , (86.1-57.4)/8
+                       , (57.4-65)/8
+                       , (65-52)/4
+                       , (52-33)/8
+                       , (33-36)/4
+                       , (36-34)/2.5
+                       ];
+
+            var inflation = [ -0.4
+                            , (3.8+2.8+3.2+3.4+2.7+2.3+1.6+2.8)/8
+                            , (3.4+2.2+1.6+2.3+3.0+2.8+2.6+3.0)/8
+                            , (3.0, 4.2, 5.4, 4.8)/4
+                            , (4.1, 3.6, 1.9, 3.6, 4.3, 3.2, 6.2, 10.3)/8
+                            , (13.5, 11.3, 7.6, 6.5)/4
+                            , (11.0, 9.1, 5.8)/3
+                            ];
+
+            var images = [];
+            [3, 0, 3, 1, 3].forEach( function (i, j) {
+                images.push('faces/'+i+j+'.png');
+            });
+
+            //Data scaling
+            var appMax = Math.max.apply(this,approvals);
+            var appMin = Math.min.apply(this,approvals);
+
+            approvalpics = _.map(approvals, function(x) {
+                return images[ 4 - Math.round((x - appMin)/(appMax-appMin)*(images.length-1)) ];
+            });
+
+            //console.log(approvals);
+
+            var side = 100;
+
+            function scaling (side, xs,ys,xaxis,yaxis, div) {
+                return {
+                    x1: _.map(xs, function(x) {
+                        return x - (side/2)*( xaxis.max - xaxis.min )
+                                   / div.width();
+                    }),
+                    y1: _.map(ys, function(y) {
+                        return y - (side/2)*( yaxis.max - yaxis.min )
+                                   / div.height();
+                    }),
+                    x2: _.map(xs, function(x) {
+                        return x + (side/2)*( xaxis.max - xaxis.min )
+                                   / div.width();
+                    }),
+                    y2: _.map(ys, function(y) {
+                        return y + (side/2)*( yaxis.max - yaxis.min )
+                                   / div.height();
+                    })
+                } ;
+            }
+
+            var options = {
+                    series: { images: { show: true } },
+                    xaxis: { min: Math.min.apply(this, debt) -2, max: Math.max.apply(this, debt) +2},
+                    yaxis: { min: Math.min.apply(this, inflation) -2, max: Math.max.apply(this, inflation) +2}
+            };
+
+            var dims = scaling(50, debt, inflation, options.xaxis, options.yaxis, $("#plot"));
+
+            var data = _.zip(approvalpics, dims.x1, dims.y1, dims.x2, dims.y2);
+ 
+
+            //EXCITEMENT
+            $.plot.image.loadDataImages([data], options, function () {
+                //Plot
+                var plot = $.plot($("#plot"), [data], options);
+
+                //Labels text mess
+                var xlabel = $('<div>').text("Change in US National Debt, Billions of Dollars per Year");
+
+                //This bit doesn't seem to work for some reason
+                //xlabel = xlabel.width(100);
+
+                var ox = { top: $('#plot').height() + 10
+                         , left: ($('#plot').width() - xlabel.width())/2
+                         };
+
+                xlabel.attr("style", 'position:absolute; font-size: small; left:' + (ox.left - 120) + 'px;top:' + ox.top + 'px;');
+
+                //Would replace with $("#plot").width trickery and such, but
+                //that didn't work so well before -_-;
+                //var ox = plot.pointOffset({ x: 0, y: -3});
+                var oy = plot.pointOffset({ x: -3.5, y: 4.5});
+                var title = plot.pointOffset({x: -3, y: 5.3});
+
+                $("#plot").append(xlabel);
+
+                //Y label
+                ylabel =""; 
+                "Avg. % Rate Inflation".split("").forEach(function (l) {
+                    ylabel += l + "<br>";
+                });
+
+                $("#plot").append('<div style="position:absolute; font-size: smaller; left:' + (oy.left + 4) + 'px;top:' + oy.top + 'px;">'+ylabel+'</div>');
+
+                $('<div>').text('Effects of Inflation and Change in National Debt on Presidential Approval Rating:')
+                          .css('position','absolute')
+                          .css('font-size', 'large')
+                          .css('left', title.left+'px')
+                          .css('top', title.top+'px')
+                          .appendTo('#plot');
+
+                //President Labels:
+                _.zip(presidents, debt, inflation).forEach(function (xy) {
+                    var label = xy[0];
+                    var pos = plot.pointOffset({x: xy[1], y: xy[2]});
+                    
+                    $('<div>').text(label)
+                              .css('position','absolute')
+                              .css('font-size', '8pt')
+                              .css('left', (pos.left-15)+'px')
+                              .css('top', (pos.top+22)+'px')
+                              .appendTo('#plot');
+                });
+
+            });
+
+            //Legend//
+
+            var loptions = {
+                    series: { images: { show: true } },
+                    xaxis: { min: Math.min.apply(this, approvals) -2, max: Math.max.apply(this, approvals) +2},
+                    yaxis: { min: 0, max: 2}
+            };
+
+            var ldims = scaling(50
+                , _.map([0,1,2,3,4], function(i) {
+                      return (4-i)/4*(appMax-appMin) + appMin;
+                  })
+                , [1,1,1,1,1]
+                , loptions.xaxis, loptions.yaxis
+                , $('#legend'));
+
+            //console.log(ldims);
+
+            var legend = _.zip( images, ldims.x1, ldims.y1, ldims.x2, ldims.y2);
+
+            $.plot.image.loadDataImages([legend], loptions, function () {
+                var plot = $.plot($("#legend"), [legend], loptions);
+
+                var ox = plot.pointOffset({ x: 46, y: -0.7});
+
+                var title = plot.pointOffset({ x: 50, y: 2.7});
+
+                $('<div>').text('Presidential Approval Rating (%)')
+                          .css('position','absolute')
+                          .css('font-size', 'smaller')
+                          .css('left', ox.left+'px')
+                          .css('top', ox.top+'px')
+                          .appendTo('#legend');
+
+                $('<div>').text('LEGEND:')
+                          .css('position','absolute')
+                          .css('font-size', 'large')
+                          .css('left', title.left+'px')
+                          .css('top', title.top+'px')
+                          .appendTo('#legend');
+            });
+        });
+    </script>
+
+    <div id="figure">
+        <div id="plot" style="width: 760; height: 400; left: 20px; top: 20px;"></div>
+        <div id="legend" style="width: 300; height: 100; top: 60px; left: 20px;"></div>
+    </div>
+
+<!--end example-->
+
+Some observations:
+
+* First, while "rage" of a rageface can be used to represent a variable pretty plainly, the other emotions are, in my opinion, too subtle to make much use of (I tried!). As such, while real Chernoff faces can represent many variables, you can only really get one out of chernoff FFFFUUUU-ces.
+
+* The ability to use arbitrary images isn't something that's baked into most plotting libraries. I originally looked into doing this with matplotlib, but the way to do so definitely wasn't obvious. (*) Flot, which I ended up using, gives you the tools, but they're more general than, "use this as a marker." g.raphael, of course, still has a long way to go.
+
+* I don't actually like flot that much. I mean, it works, but some of its api is a bit awkward. Text labels could've been done better, for example. Also, while the plots look okay, they don't really appeal to my own sense of aesthetics. I think g.raphael, once it's done and somewhat well-documented, will be more my speed.
+
+* I expected this plot to be complete and utter [chartjunk](http://en.wikipedia.org/wiki/Chartjunk), and while I wouldn't recommend using this seriously, it's actually surprisingly readable. I mean, you can actually draw conclusions from it. For instance, people disliked Carter and Ford way more than they disliked Bush II, on average. In addition, Clinton received more of a "meh" reaction from people than Carter, despite similar reductions in debt and inflation rates. Clearly, my x and y variables only paint part of the picture, if any.
+
+
+(*) I emailed their listserv about my problem, and this was the one response I got:
+
+> Images can placed at arbitrary position (using the extent keyword).
+> I think this is enough as far as you're careful with the aspect.
+> Looking at the wikipedia example, I don't see any reason that this
+> cannot be done with matplotlib.
+
+Am I the only one that got a big confused by this? :S
