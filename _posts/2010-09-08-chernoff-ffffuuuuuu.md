@@ -15,7 +15,7 @@ Then, I immediately thought of, well, my [favorite meme](http://tinypic.com/view
 
 \>:D
 
-![](http://farm5.static.flickr.com/4110/4971598443_bf0fbf50b4_b.jpg)
+![](http://farm5.static.flickr.com/4110/4971598443_bf0fbf50b4_z.jpg)
 ([Screencap on Flickr](http://www.flickr.com/photos/jesusabdullah/4971598443/))
 
 I don't feel like gh-pages-ifying the source, but it's in its own repo [here](http://github.com/jesusabdullah/chernoff-ffffuuuuuu) for your source-reading pleasure! I used flot for plotting, and underscore.js for some data-wrangling. That's one thing the stock tools aren't good for with javascript. :/
