@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starting Out with Microcontrollers, Pt. 1: What Do You Need?
+title: "Starting Out with Microcontrollers, Pt. 1: What Do You Need?"
 ---
 
 For my research, I reached a point where it became clear that an existing datalogger wouldn't cut the mustard. I needed to read data off a digital compass sensor in addition to a 3-way analog accelerometer and a thermistor, and most dataloggers give you analog-only connections and make programming nearly impossible, and still charge $5000 apiece.
