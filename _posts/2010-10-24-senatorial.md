@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'Scott McAdams Knows Where His Towel Is'
+---
+
+Last night, I attended the [ASUAF senatorial debates](http://uafsunstar.com/?p=1745). Joe Miller and Scott McAdams debated, though Lisa Murkowski was absent.
+
+It was actually a really good debate, which surprised me. I attended the Fairbanks Chamber of Commerce gubernatorial debates, and *those* were a major disappointment.  The layout was like this:  They gathered about a dozen representatives of Special Interests.  Usually "special interests" means "anything you disagree with," but in this case, I really mean it.  They had a contractor union guy, a military guy, a tourism lady, and so on. The debate itself mostly consisted of these people asking, "As governor, how are you going to appease Special Interest X?"  Like I said, disappointing.  *This* debate, however, had questions that came from us students, and as a result was much more interesting.
+
+I have to say, I was actually impressed by the intellect of both candidates. Joe Miller in particular surprised me---I expected him to come across as Palin-esque, but he's actually a pretty sharp guy.  Even though I disagree with many of his positions, I feel like he pondered these positions and can intelligently discuss most of the issues.  Scott McAdams also came across as sharper than the average politician, though he didn't really start with such a disadvantageous preconception in my mind.
+
+Something I thought was interesting was how Joe Miller referred to his connections with the Tea Party. In fact, something Joe Miller did a lot in general was say things in a noncommittal but implied manner, and the Tea Party is just an important example. In particular, Joe Miller referred to a nebulous "movement taking place across the country" and said that earmarks would be "a thing of the past," whether we vote him in or not, suggesting that the Tea Party "takeover" of the government was inevitable.  The only time he mentioned the Tea Party by name, he said, "for example," as though they were just Yet Another political group.
+
+Something that can be held in some contrast to this, and something I respect Scott McAdams for, is being honest and up-front about his positions.  "I am pro-choice," he said at least once.  I can't help but feeling a little scared for the guy. I mean, damn. That takes balls.
+
+You may have noticed in the previously-linked article that *someone* brought up net neutrality. That was me, I'll admit. While Scott McAdams was clearly somewhat familiar with the idea of net neutrality, I'm not sure that Joe Miller knew what it was. He said some stuff about free speech, which, while could be applied to net neutrality, seemed to have more to do with a tangential question regarding internet piracy that I tagged along. It's hard to say, in retrospect, whether he was dodging because he didn't know what neutrality was, or if he thought being against it (as he would have to be in my opinion, were he consistent) would be unpopular.
+
+Anyways: I'm coming out of this things supporting Scott McAdams.  This probably isn't surprising considering my political stances. However, I have to say that McAdams really impressed me.  First, he knows what net neutrality is.  He also has lots of experience as a leader in community-oriented positions, understands the importance of education, as well as the importance of investing in engineering infrastructure. Finally, he's a really smart guy and can actually intelligently debate the positions he takes. Honestly, I'd be proud to have him as a senator.
