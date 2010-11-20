@@ -151,7 +151,7 @@ have ones on their off-diagonals, and zeros everywhere else! *Fascinating*.
 Knowing that we have this definite pattern should be able to help us more
 efficiently store our graph in memory (keep in mind, memory is at a premium on
 a microcontroller). There are two parts to this:  First, there's the question
-of *how many slots* do we need for an n*n maze?
+of *how many slots* do we need for an nxn maze?
 
 First, we know that for an nxn maze, we have nxn block matrices, and that we
 only need to encode **(n^2 + n)/2** of those, due to symmetry. For example, for our
