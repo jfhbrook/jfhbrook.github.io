@@ -56,11 +56,11 @@ Pretty intuitive and awesome in some ways, but not right for what we're doing.
 * *Incidence matrix:* Here, you have a matrix that looks something like:
 
       (1) (2) (3) (4)  
-    a: 1   1   0   0  
-    b: 1   0   1   0  
-    c: 1   0   0   1  
-    d: 0   1   0   1  
-    e: 0   0   1   1  
+    a| 1   1   0   0  
+    b| 1   0   1   0  
+    c| 1   0   0   1  
+    d| 0   1   0   1  
+    e| 0   0   1   1  
 
 Basically, your rows represent edges, and your columns represent nodes.  To read
 the incidence matrix, you read across a row and see which nodes your edge
@@ -79,10 +79,10 @@ wizards: Shush.)!
 * *Adjacency Matrix:* This matrix looks more like this:
 
          (1) (2) (3) (4)  
-    (1) : 0   1   1   1  
-    (2) : 1   0   0   1  
-    (3) : 1   0   0   1  
-    (4) : 1   1   1   0  
+    (1) | 0   1   1   1  
+    (2) | 1   0   0   1  
+    (3) | 1   0   0   1  
+    (4) | 1   1   1   0  
 
 This matrix can be read as, "Does node {row} connect to node {column}?" For
 example, if we want to know if there is an edge connecting nodes 2 and 3, we
@@ -158,11 +158,11 @@ only need to encode **(n^2 + n)/2** of those, due to symmetry. For example, for 
 3x3 maze we only have 6 independent block matrices to concern ourselves with.
 Second, we know that **n** of those matrices are on the diagonal, **(n-1)** of those
 are just off the diagonal, and that the rest are zero anyway. So, that means
-we only *actually* have to keep track of **2xn-1** block matrices in total (5 in the
+we only *actually* have to keep track of **2n-1** block matrices in total (5 in the
 3x3 case). Moreover, for the diagonal matrices, we have **(n-1)** unique values to
 track (due again to symmetry), and for the off-diagonal matrices, we have **n**
 unique values. This brings our total number of unique values to
-**nx(n-1) + (n-1)xn**, or **2(n^2 - n)**.  In the case of an 8x8 matrix, this
+**n(n-1) + (n-1)n**, or **2(n^2 - n)**.  In the case of an 8x8 matrix, this
 comes out to 112.
 
 Not bad.
