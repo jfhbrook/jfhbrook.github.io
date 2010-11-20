@@ -23,11 +23,11 @@ edges (There aren't two edges that go from box 1 to box 2).
 
 So, for example's sake, suppose we have the following graph:
 
-    [1]-a-[2]
-     | \   |
-     b  c  d
-     |   \ |
-    [3]-e-[4]
+    [1]-a-[2]  
+     | \   |  
+     b  c  d  
+     |   \ |  
+    [3]-e-[4]  
 
 Hopefully, that makes sense. I don't feel like drawing pictures---I've done
 enough of that lately.
@@ -40,10 +40,10 @@ represent your nodes, and each node has links to other nodes you can jump to.
 If the links are bidirectional, one needs another link to take them back. Maybe
 in JSON, we could encode it like this:
 
-    { 'n1': ['n2', 'n3', 'n4'],
-      'n2': ['n1', 'n4'],
-      'n3': ['n1', 'n4'],
-      'n4': ['n1', 'n2', 'n3'] }
+    { 'n1': ['n2', 'n3', 'n4'],  
+      'n2': ['n1', 'n4'],  
+      'n3': ['n1', 'n4'],  
+      'n4': ['n1', 'n2', 'n3'] }  
 
 Keep in mind that, in C(++) land, these links are usually more pointer-esque.
 
@@ -55,12 +55,12 @@ Pretty intuitive and awesome in some ways, but not right for what we're doing.
 
 * *Incidence matrix:* Here, you have a matrix that looks something like:
 
-      (1) (2) (3) (4)
-    a: 1   1   0   0
-    b: 1   0   1   0
-    c: 1   0   0   1
-    d: 0   1   0   1
-    e: 0   0   1   1
+      (1) (2) (3) (4)  
+    a: 1   1   0   0  
+    b: 1   0   1   0  
+    c: 1   0   0   1  
+    d: 0   1   0   1  
+    e: 0   0   1   1  
 
 Basically, your rows represent edges, and your columns represent nodes.  To read
 the incidence matrix, you read across a row and see which nodes your edge
@@ -78,11 +78,11 @@ wizards: Shush.)!
 
 * *Adjacency Matrix:* This matrix looks more like this:
 
-         (1) (2) (3) (4)
-    (1) : 0   1   1   1
-    (2) : 1   0   0   1
-    (3) : 1   0   0   1
-    (4) : 1   1   1   0
+         (1) (2) (3) (4)  
+    (1) : 0   1   1   1  
+    (2) : 1   0   0   1  
+    (3) : 1   0   0   1  
+    (4) : 1   1   1   0  
 
 This matrix can be read as, "Does node {row} connect to node {column}?" For
 example, if we want to know if there is an edge connecting nodes 2 and 3, we
@@ -107,27 +107,27 @@ Of course we can.
 
 I began to write down the incidence matrix for a 3x3 "maze" with *no* walls:
 
-    (1)---(2)---(3)
-     |     |     |
-    (4)---(5)---(6)
-     |     |     |
-    (7)---(8)---(9)
+    (1)---(2)---(3)  
+     |     |     |  
+    (4)---(5)---(6)  
+     |     |     |  
+    (7)---(8)---(9)  
 
 and it looked like this:
 
-                 [R1]          [R2]          [R3]
-          _| (1) (2) (3) | (4) (5) (6) | (7) (8) (9)
-         (1)  0   1   0  |  1   0   0  |  0   0   0
-    [R1] (2)  1   0   1  |  0   1   0  |  0   0   0
-         (3)  0   1   0  |  0   0   1  |  0   0   0
-          ---------------|-------------|-------------
-         (4) (look up &  |  0   1   0  |  1   0   0
-    [R2] (5)   to the    |  1   0   1  |  0   1   0
-         (6)   left!)    |  0   1   0  |  0   0   1
-          ---------------|-------------|-------------
-         (7)  (look in   | (look up &  |  0   1   0
-    [R3] (8) the upper-  |   to the    |  1   0   1
-         (9)   right!)   |   left!)    |  0   1   0
+                 [R1]          [R2]          [R3]  
+          _| (1) (2) (3) | (4) (5) (6) | (7) (8) (9)  
+         (1)  0   1   0  |  1   0   0  |  0   0   0  
+    [R1] (2)  1   0   1  |  0   1   0  |  0   0   0  
+         (3)  0   1   0  |  0   0   1  |  0   0   0  
+          ---------------|-------------|-------------  
+         (4) (look up &  |  0   1   0  |  1   0   0  
+    [R2] (5)   to the    |  1   0   1  |  0   1   0  
+         (6)   left!)    |  0   1   0  |  0   0   1  
+          ---------------|-------------|-------------  
+         (7)  (look in   | (look up &  |  0   1   0  
+    [R3] (8) the upper-  |   to the    |  1   0   1  
+         (9)   right!)   |   left!)    |  0   1   0  
 
 We can see that the semi-diagonal blocks are identity matrices. In retrospect,
 maybe this isn't surprising, since blocks in a row connect to the ones directly
@@ -137,13 +137,13 @@ on-diagonal blocks have an interesting form that in only 3-d is hard to see.
 
 So, let's write down the adjacency matrix for a row of four elements:
 
-    [1]---[2]---[3]---[4]
+    [1]---[2]---[3]---[4]  
 
-        (1)  (2)  (3)  (4)
-    (1)  0    1    0    0
-    (2)  1    0    1    0
-    (3)  0    1    0    1
-    (4)  0    0    1    0
+        (1)  (2)  (3)  (4)  
+    (1)  0    1    0    0  
+    (2)  1    0    1    0  
+    (3)  0    1    0    1  
+    (4)  0    0    1    0  
 
 So, in an interestingly self-similar manner, the block matrices on the diagonal
 have ones on their off-diagonals, and zeros everywhere else! *Fascinating*.
