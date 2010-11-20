@@ -55,12 +55,12 @@ Pretty intuitive and awesome in some ways, but not right for what we're doing.
 
 * *Incidence matrix:* Here, you have a matrix that looks something like:
 
-      (1) (2) (3) (4)  
-    a| 1   1   0   0  
-    b| 1   0   1   0  
-    c| 1   0   0   1  
-    d| 0   1   0   1  
-    e| 0   0   1   1  
+        (1)  (2)  (3)  (4)  
+    (a)  1    1    0    0  
+    (b)  1    0    1    0  
+    (c)  1    0    0    1  
+    (d)  0    1    0    1  
+    (e)  0    0    1    1  
 
 Basically, your rows represent edges, and your columns represent nodes.  To read
 the incidence matrix, you read across a row and see which nodes your edge
@@ -78,11 +78,11 @@ wizards: Shush.)!
 
 * *Adjacency Matrix:* This matrix looks more like this:
 
-         (1) (2) (3) (4)  
-    (1) | 0   1   1   1  
-    (2) | 1   0   0   1  
-    (3) | 1   0   0   1  
-    (4) | 1   1   1   0  
+        (1)  (2)  (3)  (4)  
+    (1)  0    1    1    1  
+    (2)  1    0    0    1  
+    (3)  1    0    0    1  
+    (4)  1    1    1    0  
 
 This matrix can be read as, "Does node {row} connect to node {column}?" For
 example, if we want to know if there is an edge connecting nodes 2 and 3, we
