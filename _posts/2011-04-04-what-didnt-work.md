@@ -93,7 +93,9 @@ I attempted to develop a scheme that would use SSH to implement an ad-hoc
 mapreduce-esque scheme across a number of ARSC workstations to split the job of 
 calulating K-values amongst about six machines.
 
-![]()
+![](http://farm5.static.flickr.com/4141/4788254709_c469f04418_z.jpg)
+
+([flickr](http://www.flickr.com/photos/jesusabdullah/4788254709/))
 
 Of course, looking at this picture, you might realize how crazy this idea was.
 Parallelism isn't intractible, but trying to implement completely parallelism
