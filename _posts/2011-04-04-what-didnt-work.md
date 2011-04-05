@@ -7,6 +7,14 @@ I just defended my thesis and took my oral comprehensive exam. I passed! I still
 that *didn't* work, or just didn't end up being useful, and what could be learned from
 them.
 
+Before you go on: You'll probably want some sort of background on what, exactly, this whole ``thesis'' thing is about. So:
+
+[Read This.](http://li225-26.members.linode.com/presents.pdf)
+
+Alternately, just read the first part, which should give you a vague idea as to what the actual problem *is*.
+
+Okay. Still with me? Read on.
+
 ## Ellipsoid Measurement Space
 
 When I first looked at this problem, I conjectured that the "shape" of the
