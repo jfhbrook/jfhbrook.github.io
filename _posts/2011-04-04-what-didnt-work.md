@@ -7,7 +7,7 @@ I just defended my thesis and took my oral comprehensive exam. I passed! I still
 that *didn't* work, or just didn't end up being useful, and what could be learned from
 them.
 
-Before you go on: You'll probably want some sort of background on what, exactly, this whole ``thesis'' thing is about. So:
+Before you go on: You'll probably want some sort of background on what, exactly, this whole "thesis" thing is about. So:
 
 [Read This.](http://li225-26.members.linode.com/presents.pdf)
 
@@ -211,9 +211,9 @@ Other criticisms of my thesis, *as it's written right now*, are that my writing 
 Science and engineering tends to report in the affirmative. Most papers and documentations focus
 on what *did* work, and what *was* shown as a result. Moreover, scientific writing doesn't even really talk about the *particulars* of how something was done. For example, in my thesis (as-written), I showed multiple code snippets and described their function. This was uncool in the eyes of my thesis committee.
 
-In contrast, most of the technical articles I've been reading lately haven't been journal papers, but startup blogs, code tutorials and READMEs. These sorts of documents, in fact, focus on exactly what I did in my thesis---that is, the particulars of how something was done, complete with code snippets. Moreover, most hackers don't care about such things as professional style. In fact, many would call hackers markedly *un*professional. For example, James [did a presentation on dnode that had *expletives* in it](http://substack.net/posts/9aabb1/slides-from-my-dnode-talk-at-parisoma). It's a pretty good presentation, right? But there aren't very many venues where ``fuck yea callbacks'' would be appropriate, especially outside the hacker community.
+In contrast, most of the technical articles I've been reading lately haven't been journal papers, but startup blogs, code tutorials and READMEs. These sorts of documents, in fact, focus on exactly what I did in my thesis---that is, the particulars of how something was done, complete with code snippets. Moreover, most hackers don't care about such things as professional style. In fact, many would call hackers markedly *un*professional. For example, James [did a presentation on dnode that had *expletives* in it](http://substack.net/posts/9aabb1/slides-from-my-dnode-talk-at-parisoma). It's a pretty good presentation, right? But there aren't very many venues where "fuck yea callbacks" would be appropriate, especially outside the hacker community.
 
-Of course, this is an extreme example. In my thesis, even speaking in the second person constitutes a ``situation.'' It's being published, after all.
+Of course, this is an extreme example. In my thesis, even speaking in the second person constitutes a "situation." It's being published, after all.
 
 ### Anyways.
 
