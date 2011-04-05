@@ -7,7 +7,7 @@ I just defended my thesis and took my oral comprehensive exam. I passed! I still
 that *didn't* work, or just didn't end up being useful, and what could be learned from
 them.
 
-# Ellipsoid Measurement Space
+## Ellipsoid Measurement Space
 
 When I first looked at this problem, I conjectured that the "shape" of the
 measured conductivity space in spherical coordinates, where phi and theta
@@ -36,7 +36,7 @@ fact, Mohr's Circle itself helps visualize eigenvalues admirably, though in
 many problems outside material mechanics a shear component doesn't make sense.
 I mean, "shear conductivity?" What's that?
 
-# Open-Source FEM Toolchain
+## Open-Source FEM Toolchain
 
 As I became somewhat disheartened over a lack of initial success with COMSOL, I
 began exploring other tools. In particular, I was interested in using open-source
@@ -79,7 +79,7 @@ as I outlined in this reddit post, likely written in December 2010:
 At the time of authorship, these tools were much more fresh in my mind than they
 are now, so I'll let Past Self speak in my stead.
 
-# Parallelism
+## Parallelism
 
 Last summer, after making the first iteration of my model, I found that 
 simulations took a while to run. At about the same time, I attended the Scipy
@@ -136,7 +136,7 @@ A failed approach involved trying to fit the data points directly against the
 exponential integral solution. However, the convergence properties of this
 approach were less than ideal.
 
-# Custom Data Logger
+## Custom Data Logger
 
 Speaking of time management: I also spent a good chunk of time researching
 the programming of my own data logger using a microcontroller.  This was
@@ -168,7 +168,7 @@ On the other hand, having followed the "spend money" rule, I now have a MSP-430
 that I don't need right now. This could lead to fun hackery down the road. Who
 knows?
 
-# Layered Glycerine
+## Layered Glycerine
 
 One of the "standards" used with the needle probe apparatus is to measure the
 thermal conductivity of glycerine in an insulated box.  Glycerine is chosen
@@ -192,7 +192,7 @@ is that the alcohol mixture floats on top of the unadulterated glycerine.
 This shouldn't have been a surprise, and yet it was. Interesting how that
 works.  Instead, the experiments use straight table salt and table sugar.
 
-# Appendicising This Blog To My Thesis, and Other Literary Faux-Pas
+## Appendicising This Blog To My Thesis, and Other Literary Faux-Pas
 
 Should've seen that one coming, right?
 
