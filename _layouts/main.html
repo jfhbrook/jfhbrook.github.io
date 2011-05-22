@@ -1,61 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
-<head>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="http://jesusabdullah.github.com/css/blueprint/screen.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="http://jesusabdullah.github.com/css/blueprint/print.css" type="text/css" media="print">
-    <!--[if lt IE 8]>
-      <link rel="stylesheet" href="http://jesusabdullah.github.com/css/blueprint/ie.css" type="text/css" media="screen, projection">
-    <![endif]-->
-
-    <meta name="author" content="Joshua Holbrook">
-    <meta name="generator" content="vim and good ol' cut/paste">
-    <meta name="description" content="Joshua Holbrook's Web Page">
-</head>
-
-<body>
-
-<div class="container">
-    <!--headzor-->
-    <div class="span-24 last">
-        <span style="font-size: 32pt">JOSHUA HOLBROOK</span> : <a href="http://www.flickr.com/photos/jesusabdullah">flickr</a> : 
-<a href="http://www.github.com/jesusabdullah">Github</a> :
-<a href="http://www.twitter.com/jesusabdullah">Twitter</a> :  
-<a href="http://www.github.com/jesusabdullah/resume">resume</a>
-    <hr>
-    </div>
-
-    <!--content-->
-    <div class="span-15 colborder">
-    {{ content }}
-    </div>
-
-    <div class="span-8 last">
-        <h3>BLAGROHL:</h3>
-        <div class="box">
-            <ul>
-                <li>&gt;_&lt; <a href="http://www.substack.net">The Universe of Discord</a></li>
-                <li><a href="http://www.catonmat.net">Catonmat.net</a> -- good coders code, great reuse.</li>
-            </ul>
-        </div>
-        <h3>ALL THE BLOGPOSTS STANDING IN THE LINE FOR THE BATHROOM:</h3>
-        <div class="box">
-            <ul>
-            {% for post in site.posts %}
-                <li> {{ post.date | date_to_string }} : <a href="{{ post.url }}">{{ post.title }}</a> </li>
-            {% endfor %}
-            </ul>
-        </div>
-    </div>
-
-    <!--footer-->
-    <div class="span-24 last">
-        <hr>
-        <p>Joshua Holbrook last updated this {{ site.time }}.</p>
-        <img src="/banners/invalid.png" alt="[Validated HTML is for BITCHES. :v]" title="Or, more accurately, I find it's a massive pain in the ass so I don't bother.">
-    </div>
-</div>
-
-</body>
-</html>
+<!DOCTYPE html><html><head><title>"{{ page.title }}"</title></head><body><div id="header"><h1>JOSHUA HOLBROOK</h1><a href="http://www.github.com/jesusabdullah">Github</a> : 
+<a href="http://www.twitter.com/jesusabdullah">Twitter</a></div><div id="mainbody"><div id="content">{{ content }}
+</div><div id="sidebar"><h3>BLAGROHL:</h3><div id="box"><ul><li>&gt;_&lt;
+<a href="http://www.substack.net">The Universe of Discord</a></li><li><a href="http://www.catonmat.net">Catonmat.net</a>-- good coders code, great reuse.
+</li></ul></div><h3>ALL THE BLOGPOSTS STANDING IN THE LINE FOR THE BATHROOM:</h3><div id="box"><ul>{% for post in site.posts %}
+<li>{{ post.date | date_to_string }} : <a href="{{ post.url }}">{{ post.title }}
+</a></li>{% endfor %}
+</ul></div></div></div><div id="footer"><p>Joshua Holbrook last updated this {{ site.time }}.</p><img src="/banners/invalid.png" alt="[Validated HTML is for BITCHES. :v]" title="Or, more accurately, I find it's a massive pain in the ass so I don't bother."></div></body></html>
