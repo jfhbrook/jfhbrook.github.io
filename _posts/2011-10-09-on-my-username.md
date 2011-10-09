@@ -17,7 +17,7 @@ Now, I've actually had very few people complain about my username. However, I've
 
 > Where did your username come from bro? I bet it means something profound!
 
-As it turns out, "Jesus" and "Joshua" share a common linguistic origin of the Hebrew "Yeshua", and "Abdullah" translates roughly to "slave of God", where (iirc) "slave" has connotations of pure religious devotion and not so much of chains/whips/"your name is Toby"s. It'd almost be cool if I had these in mind when "designing" my username, but the truth is that I didn't even know these until years afterwards.
+As it turns out, "Jesus" and "Joshua" share a common linguistic origin of the Hebrew "Yeshua", and "Abdullah" translates roughly to "servant of God". It'd almost be cool if I had these in mind when "designing" my username, but the truth is that I didn't even know these until years afterwards.
 
 In the late nineties and early 2000s, I was in middle school and early high school, and it was a time where all of kids were establishing early identities on the internet. You know, like:
 
