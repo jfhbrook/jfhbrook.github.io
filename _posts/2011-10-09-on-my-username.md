@@ -69,4 +69,4 @@ I'm sorry if you're offended. No, I won't change my username, but I ask you not 
 
 Also, if there's a lesson to learn here, it's this:
 
-> **PROTIP:** When you're 14 and choosing an online handle, think about whether you would want to be called "jesus" in real life or not.
+> **PROTIP:** When you're 14 and choosing an online handle, think about whether you would want to be called "jesus" in a professional setting or not.
