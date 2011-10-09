@@ -19,8 +19,6 @@ Now, I've actually had very few people complain about my username. However, I've
 
 As it turns out, "Jesus" and "Joshua" share a common linguistic origin of the Hebrew "Yeshua", and "Abdullah" translates roughly to "slave of God", where (iirc) "slave" has connotations of pure religious devotion and not so much of chains/whips/"your name is Toby"s. It'd almost be cool if I had these in mind when "designing" my username, but the truth is that I didn't even know these until years afterwards.
 
-## What happened
-
 In the late nineties and early 2000s, I was in middle school and early high school, and it was a time where all of kids were establishing early identities on the internet. You know, like:
 
 * `awesomesnowmachinebadass97@hotmail.com`
@@ -65,11 +63,9 @@ I started using as an identity when I used to [draw comics](http://wholesomecool
 
 Over the years, what started out as a bad joke-turned-password-turned-username because a decent online identity/brand. I mean, I'm no internet celebrity, but I do think that there's a strong enough association now between my nick and what I've done on the internet thus far that I'm not really too keen on changing identities.
 
-(Apologies to anyone offended, of course. It wasn't meant to be that way! Really!)
-
 ## So, dear reader:
 
-No, I won't change my username, but I ask you not to read too much into it.
+I'm sorry if you're offended. No, I won't change my username, but I ask you not to read too much into it.
 
 Also, if there's a lesson to learn here, it's this:
 
