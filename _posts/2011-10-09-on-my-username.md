@@ -19,13 +19,13 @@ Now, I've actually had very few people complain about my username. However, I've
 
 As it turns out, "Jesus" and "Joshua" share a common linguistic origin of the Hebrew "Yeshua", and "Abdullah" translates roughly to "servant of God". It'd almost be cool if I had these in mind when "designing" my username, but the truth is that I didn't even know these until years afterwards.
 
-In the late nineties and early 2000s, I was in middle school and early high school, and it was a time where all of kids were establishing early identities on the internet. You know, like:
+In the late nineties and early 2000s, I was in middle school and early high school, and it was a time where all of us kids were establishing early identities on the internet. You know, like:
 
 * `awesomesnowmachinebadass97@hotmail.com`
 * `hotprincessbabe88@yahoo.com`
 * `dangerousdude_buttman@yahoo.com`
 
-All of us kids were beginning to collect email addresses and internet usernames, and none of us had much taste. Perhaps more importantly, none of us had an eye for the future, when we are in our mid-20s and no longer want to be awesome snowmachine badasses or hot princess babes. Or, God forbid, dangerous dude...butt-men. Gross.
+We were beginning to collect email addresses and internet usernames, and none of us had much taste. Perhaps more importantly, none of us had an eye for the future, when we are in our mid-20s and no longer want to be awesome snowmachine badasses or hot princess babes. Or, God forbid, dangerous dude...butt-men. Gross.
 
 Funny enough, `dangerousdude_buttman@yahoo.com` actually was my first active email address. But, the first username of mine that I'd actually remember and reuse? That happened to be *jesusabdullah*.
 
