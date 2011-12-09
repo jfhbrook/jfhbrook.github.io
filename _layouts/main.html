@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="/css/fixes.css">
     <meta name="author" content="Joshua Holbrook">
     <meta name="description" content="Joshua Holbrook's Web Page">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- easteregg.in - where you go to get your website's easter eggs -->
     <script type="text/javascript">
-      window.onload = function () {
-        if (((new Date() > new Date("Wed, 16 Nov 2011"))
-         && (new Date() < new Date("Thur, 17 Nov 2011")) )) {
-          document.getElementById("censorship").style.display = "block";
+    (function(window, undefined){
+    var konami_keys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+      konami_index = 0,
+      handler = function(e) {
+        if (e.keyCode === konami_keys[konami_index++]) {
+          if (konami_index === konami_keys.length) {
+            $(document).unbind("keydown", handler);
+            $.getScript("http://cdn.easteregg.in/outcomes/unicorn-pooper/unicorn.js?", function() {});
+          }
+        } else {
+          konami_index = 0;
         }
-      }
+      };
+    $(document).bind("keydown", handler);
+    })(this);
     </script>
+
   </head>
 
   <body>
@@ -28,7 +40,6 @@
               <h1 style="font-size: 50px;">JOSHUA HOLBROOK <small><a href="http://www.flickr.com/photos/jesusabdullah">flickr</a> : 
               <a href="http://www.github.com/jesusabdullah">github</a> :
               <a href="http://www.twitter.com/jesusabdullah">twitter</a></small></h1>
-<a id="censorship" style="width:520px;height:30px;vertical-align:middle;text-align:center;background-color:#000;position:absolute;z-index:5555;top:23px;left:320px;background-image:url(http://americancensorship.org/images/stop-censorship-small.png);background-position:center center;background-repeat:no-repeat;display: none;" href="http://americancensorship.org"></a>
             </header>
           
           </div>
@@ -70,23 +81,5 @@ oOOo <span style="font-family: sans-serif"><a href="http://f00li5h.pin21.com">Pa
         <footer>
       </div>
     </div>
-    <!-- easteregg.in - where you go to get your website's easter eggs -->
-    <script type="text/javascript">
-    (function(window, undefined){
-    var konami_keys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
-      konami_index = 0,
-      handler = function(e) {
-        if (e.keyCode === konami_keys[konami_index++]) {
-          if (konami_index === konami_keys.length) {
-            $(document).unbind("keydown", handler);
-            $.getScript("http://cdn.easteregg.in/outcomes/unicorn-pooper/unicorn.js?", function() {});
-          }
-        } else {
-          konami_index = 0;
-        }
-      };
-    $(document).bind("keydown", handler);
-    })(this);
-    </script>
   </body>
 </html>
