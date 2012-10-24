@@ -1,0 +1,28 @@
+.well {
+  background-color: #ffffff;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+a {
+  color: #c00;
+}
+
+a:hover {
+  color: #900;
+}
+
+a:visited {
+  color: #a00;
+}
+
+pre {
+  border-radius: 0px;
+  background-color: #333;
+}
+
+code {
+  background-color: #333;
+  border: 0px;
+  color: #0f0;
+}
