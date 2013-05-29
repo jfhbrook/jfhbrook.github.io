@@ -532,8 +532,7 @@ web interface (after installing express):
 ![html admin](/images/2013-05-28-big-admin.png)
 
 You can reflect these same resources over pretty much anything. `resources`
-also comes with resources for reflecting over irc, with a JSON api and with
-Engine.IO.
+ships with reflection support for: [cli](https://github.com/bigcompany/resources/tree/master/cli), [irc](https://github.com/bigcompany/resources/tree/master/irc), [form](https://github.com/bigcompany/resources/tree/master/form), [socket](https://github.com/bigcompany/resources/tree/master/socket), [rest](https://github.com/bigcompany/resources/tree/master/rest), and [many more](https://github.com/bigcompany/resources).
 
 ## Maybe Not Everything is Terrible
 
