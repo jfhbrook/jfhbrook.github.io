@@ -385,7 +385,8 @@ This will output:
     null { id: 'bobby-a', foo: 'bar' }
 
 It's also possible to use `Resource.before` to prevent a resource method from
-being called based on incoming data. This is particularly useful for 
+being called based on incoming data. This is particularly useful for adding
+additional asserts.
 
 ## Using Resources
 
