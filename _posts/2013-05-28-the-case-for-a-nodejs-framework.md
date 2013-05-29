@@ -559,3 +559,9 @@ because of the hookability and clean API of resources, if a developer wants to
 handle a task on a low level, big doesn't get in the way.
 
 It is the best of both worlds.
+
+## Links
+
+* [https://github.com/bigcompany/big](https://github.com/bigcompany/big)
+* [https://github.com/bigcompany/resource](https://github.com/bigcompany/resource)
+* [https://github.com/bigcompany/resources](https://github.com/bigcompany/resources)
