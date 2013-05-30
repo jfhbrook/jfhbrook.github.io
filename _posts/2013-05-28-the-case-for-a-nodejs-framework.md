@@ -121,7 +121,7 @@ You start by defining a resource with a name:
 Then, you can add methods to the resource:
 
     creature.method('talk', talk);
-    var talk = function talk(msg) {
+    function talk(msg) {
       console.log(msg);
       return msg;
     }
