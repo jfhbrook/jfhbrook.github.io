@@ -27,7 +27,7 @@ The most coherent claim made here is that node's "just a webserver." Is this tru
 
 Yeah, kind of.
 
-I mean, node's no nginx. Unlike nginx configs, javascript is turing-complete and node's require system means you can pull in *all kinds* of stuff. With, say, nginx, if you want to add functionality you have to write a plugin in C, and then compile it in. Which you can do of course, but it's not like nginx was really designed to write webapps on top of, excepting for its ability to use CGI/fastCGI/mod_<whatever>/proxying/whatever.
+I mean, node's no nginx. Unlike nginx configs, javascript is turing-complete and node's require system means you can pull in *all kinds* of stuff. With, say, nginx, if you want to add functionality you have to write a plugin in C, and then compile it in. Which you can do of course, but it's not like nginx was really designed to write webapps on top of, excepting for its ability to use CGI/fastCGI/mod_{whatever}/proxying/whatever.
 
 Perhaps a better comparison would be made between node and [werkzeug](http://werkzeug.pocoo.org/). Now, I haven't used werkzeug, but I think it's pretty obvious that there are parallels between node's lower-level http/IO APIs and werkzeug's lower-level APIs for writing WSGI applications. And, like javascript/node_modules, python is turing-complete and has a reasonable module system.
 
