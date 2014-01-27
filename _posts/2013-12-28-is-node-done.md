@@ -11,7 +11,7 @@ It's a bit of a bummer reading it, because even though it's very ranty and doesn
 
 ## Preliminaries
 
-First of all: I don't know Ev Bogue. In real life, he could be a cool dude. Or, he could be just as ranty in person as he is in this post. I honestly don't know. Keep in mind, this isn't really anything personal against the dude.
+First of all: I don't know Ev Bogue. In real life, he could be a cool dude. Or, he could be just as ranty in person as he is in this post. I honestly don't know. Keep in mind, this isn't really anything personal against him.
 
 Second: There are a number of digressions from OP that should be addressed separately as they distract from the Main Point (as it were):
 
