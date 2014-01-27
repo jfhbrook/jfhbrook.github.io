@@ -20,15 +20,11 @@ a:visited {
   color: #a00;
 }
 
-pre {
+code, pre {
   font-family: Computer Modern Typewriter Light;
+  border: 0px;
   border-radius: 0px;
-  background-color: #333;
+  background-color: #fff;
+  color: #6c9055;
 }
 
-code {
-  font-family: Computer Modern Typewriter Light;
-  background-color: #333;
-  border: 0px;
-  color: #0f0;
-}
