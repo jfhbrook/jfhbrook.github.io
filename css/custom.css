@@ -1,3 +1,7 @@
+body, p {
+  font-family: Computer Modern Serif;
+}
+
 .well {
   background-color: #ffffff;
   border-color: #fff;
@@ -17,11 +21,13 @@ a:visited {
 }
 
 pre {
+  font-family: Computer Modern Typewriter Light;
   border-radius: 0px;
   background-color: #333;
 }
 
 code {
+  font-family: Computer Modern Typewriter Light;
   background-color: #333;
   border: 0px;
   color: #0f0;
