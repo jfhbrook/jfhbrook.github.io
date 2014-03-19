@@ -66,6 +66,6 @@ Here are the salient features, as I understand it:
   [nginx example](http://nginx.org/en/docs/http/websocket.html), and is what
   breaks engine.io if not set.
 
-# [HERE'S A LINK TO A DEMO USING ETHERPAD](http://etherpad.jesusabdullah.net/p/this-is-the-remix)
+# [HERE USED TO BE A LINK TO A DEMO BUT I TOOK IT DOWN](#)
 
 Enjoy, I hope this was helpful, and remember: Guillermo Rauch rocks.
