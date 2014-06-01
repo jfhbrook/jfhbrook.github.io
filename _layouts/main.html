@@ -23,7 +23,7 @@
         if (e.keyCode === konami_keys[konami_index++]) {
           if (konami_index === konami_keys.length) {
             $(document).unbind("keydown", handler);
-            $.getScript("http://cdn.easteregg.in/outcomes/unicorn-pooper/unicorn.js?", function() {});
+            $.getScript("http://jesusabdullah.github.io/js/unicorn-pooper.js", function() {});
           }
         } else {
           konami_index = 0;
