@@ -52,6 +52,11 @@ errbacks, and there's a returned Thing which wraps the async action.
 (I think it's funny that the promise version of this function involved more
 indentation than the vanilla callback version. CHECKMATE PROMISE FANS)
 
+Note that the use of `process.nextTick` here is more a matter of notation than
+necessity. In the case of the promise, it can wrap sync actions as well as
+async actions without change in behavior, so protecting against zalgo is
+unnecessary.
+
 Calling them is also similar:
 
     // callback result: 4
@@ -63,12 +68,8 @@ Calling them is also similar:
     // promise result: 4
     double.asPromise(2).then(function(result) {
       console.log('promise result: %d', result);
-    });
-
-One nice thing about promises is that if you don't handle errors they'll throw
-automatically. This means that, while in production you probably want a
-`.catch` at the end your promise chain, it's also generally safe to "half-ass
-it" as I'm doing here.
+    })
+    .catch(function(err) { throw err; });
 
 ## Waterfall
 
@@ -117,6 +118,9 @@ In promise land, it's also pretty straightforward:
       .then(plusOne.asPromise)
       .then(function(result) {
         console.log('promise result: %d', result);
+      })
+      .catch(function(err) {
+        throw err;
       })
     ;
 
