@@ -12,7 +12,7 @@ function turtlerocket(user, readSelect, writeSelect) {
 
   var uri = 'https://turtlerocket-2016.nodeknockout.com/api/v1/search?user='+encodeURIComponent(user)+'&q='+encodeURIComponent(text);
 
-  $.get(uri, function(data) {
+  var get = $.get(uri, function(data) {
     console.log(data);
     if (data.hits) {
       writeSelect.append('<ul>' + data.hits.reduce(function(txt, result) {
@@ -22,5 +22,9 @@ function turtlerocket(user, readSelect, writeSelect) {
     else {
       writeSelect.append('<ul><li>hi</li></ul>')
     }
+  }).fail(function(data) {
+    console.log('failed!');
+    console.log(data);
+    console.log(get);
   });
 }
