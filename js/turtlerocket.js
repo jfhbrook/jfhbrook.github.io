@@ -16,7 +16,7 @@ function turtlerocket(user, readSelect, writeSelect) {
     console.log(data);
     if (data.hits) {
       writeSelect.append('<ul>' + data.hits.reduce(function(txt, result) {
-        txt += '<li><a href=" + result.link + '">'+result.title+'</a></li>';
+        txt += '<li><a href="' + result.link + '">'+result.title+'</a></li>';
       }, '') + '</ul>')
     }
     else {
