@@ -49,7 +49,7 @@ This latter point is particularly cool. For an example, I once worked on an endp
 
     const ctx = {
       _log: [],
-      log: (data) => { _log.push(data); bunyan.log(data); }
+      log: (data) => { _log.push(data); bunyanLogger.info(data); }
     };
 
     Promise.resolve(ctx)
