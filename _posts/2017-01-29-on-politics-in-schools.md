@@ -38,7 +38,7 @@ as to my mother who helped me get some details straight.
 ## [Today's Article: "Die!" High school teacher stages mock assassination of Trump](http://www.foxnews.com/opinion/2017/01/26/die-high-school-teacher-stages-mock-assassination-trump.html)
 
 ### (Go ahead and read it, then come back)
-#### WARNING: Now would be the time to throw up your ad blocker if you think giving money to Fox News is immoral
+### WARNING: Now would be the time to throw up your ad blocker if you think giving money to Fox News is immoral
 
 Before I dive into the meat of this thing, just a quick note: that guns in
 schools joke is dumb. Not because it's offensive to people that are concerned
